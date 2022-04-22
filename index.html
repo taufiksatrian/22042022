@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>Hai Cantik!!</h1>
+    <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" alt="" />
+    <h1>Happy Aniversary 1 Months</h1>
+    <h1>Kamu seneng ngga pacaran sama aku?</h1>
+    <button id="btn_seneng" onclick="alert('I LOVE YOU SAYANG')">Seneng</button>
+    <button id="btn_ngga" onclick="ngga(this)" style="position: relative">NGGGA SENENG</button>
+  </body>
+
+  <script>
+    function ngga(id) {
+      var seneng = document.getElementById('btn_seneng');
+      var i = Math.floor(Math.random() * 100) + 1;
+      var j = Math.floor(Math.random() * 100) + seneng.offsetTop;
+      id.style.left = i + 'px';
+      id.style.top = j + 'px';
+    }
+  </script>
+</html>
